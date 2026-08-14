@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Afia Tasnim Ria, a CSE student building full-stack web systems, Java desktop apps, IoT prototypes and healthcare UX." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Afia Tasnim Ria" />
+  <title>Afia Tasnim Ria — Portfolio</title>
+
+  <!--
+    NOTE: every URL below uses a placeholder domain (afia-portfolio.vercel.app)
+    since this site isn't deployed yet. Once it has a real domain, replace
+    that placeholder in: this <head> block (canonical + og:url), sitemap.xml,
+    and robots.txt — search "afia-portfolio.vercel.app" in each file.
+  -->
+  <link rel="canonical" href="https://afia-portfolio.vercel.app/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://afia-portfolio.vercel.app/" />
+  <meta property="og:site_name" content="Afia Tasnim Ria — Portfolio" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Afia Tasnim Ria — Portfolio" />
+  <meta property="og:description" content="Portfolio of Afia Tasnim Ria, a CSE student building full-stack web systems, Java desktop apps, IoT prototypes and healthcare UX." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Afia Tasnim Ria — Portfolio" />
+  <meta name="twitter:description" content="Portfolio of Afia Tasnim Ria, a CSE student building full-stack web systems, Java desktop apps, IoT prototypes and healthcare UX." />
+  <!-- og:image / twitter:image intentionally omitted — add a real 1200x630 photo or screenshot, then add <meta property="og:image" content="..."> and <meta name="twitter:image" content="..."> back here. -->
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23050505'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' font-weight='700' fill='%2339e2a1' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Afia Tasnim Ria",
+    "url": "https://afia-portfolio.vercel.app/",
+    "jobTitle": "Computer Science & Engineering Student",
+    "description": "CSE student, software developer and UI/UX enthusiast building full-stack web systems, Java desktop apps, IoT prototypes and healthcare UX projects.",
+    "email": "mailto:aria2231058@bscse.uiu.ac.bd",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "United International University"
+    },
+    "sameAs": [
+      "https://github.com/afiatasnimria",
+      "https://www.linkedin.com/in/afia-tasnim-ria-7012563b4/",
+      "https://www.facebook.com/afia.tasnimria"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#top">Skip to content</a>
+
+  <div class="bg-orbs" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="island" id="island">
+    <a class="brand" href="#top">ATR<span>.</span></a>
+    <div class="island-links">
+      <a href="#about">About</a>
+      <a href="#academics">Academics</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+    </div>
+    <a class="island-cta" href="#contact">
+      <span>Contact</span>
+      <span class="cta-icon" aria-hidden="true">↗</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="menuOverlay" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <nav class="overlay-links">
+      <a href="#about" style="--i:0">About</a>
+      <a href="#academics" style="--i:1">Academics</a>
+      <a href="#research" style="--i:2">Research</a>
+      <a href="#projects" style="--i:3">Projects</a>
+      <a href="#skills" style="--i:4">Skills</a>
+      <a href="#experience" style="--i:5">Experience</a>
+      <a href="#contact" style="--i:6">Contact</a>
+    </nav>
+    <div class="overlay-foot">
+      <a href="https://github.com/afiatasnimria" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a href="Afia-CV.pdf" target="_blank" rel="noreferrer">CV ↗</a>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow"><span class="dot"></span>CSE Student · Builder · UI/UX Enthusiast</span>
+          <h1 class="hero-title">Afia Tasnim<br><span class="accent-italic">Ria</span></h1>
+          <p class="hero-lead">I turn ideas into useful, interactive software — from collaborative desktop applications to web systems, IoT prototypes and thoughtful interface design.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="Afia-CV.pdf" target="_blank" rel="noreferrer">
+              <span>View CV</span><span class="btn-icon">↗</span>
+            </a>
+            <a class="btn btn-ghost" href="#contact">
+              <span>Get in touch</span><span class="btn-icon">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="orbit" aria-label="Core skills">
+          <div class="orbit-core">CORE</div>
+          <div class="orbit-ring ring-outer">
+            <span class="orbit-chip" style="--a:0deg;--ra:0deg">Java</span>
+            <span class="orbit-chip" style="--a:90deg;--ra:-90deg">Python</span>
+            <span class="orbit-chip" style="--a:180deg;--ra:-180deg">C++</span>
+            <span class="orbit-chip" style="--a:270deg;--ra:-270deg">MySQL</span>
+          </div>
+          <div class="orbit-ring ring-inner">
+            <span class="orbit-chip" style="--a:30deg;--ra:-30deg">PHP</span>
+            <span class="orbit-chip" style="--a:150deg;--ra:-150deg">JS</span>
+            <span class="orbit-chip" style="--a:270deg;--ra:-270deg">SQL</span>
+          </div>
+          <div class="orbit-ring ring-mid">
+            <span class="orbit-chip" style="--a:60deg;--ra:-60deg">HTML</span>
+            <span class="orbit-chip" style="--a:132deg;--ra:-132deg">CSS</span>
+            <span class="orbit-chip" style="--a:204deg;--ra:-204deg">JavaFX</span>
+            <span class="orbit-chip" style="--a:276deg;--ra:-276deg">Figma</span>
+            <span class="orbit-chip" style="--a:348deg;--ra:-348deg">IoT</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div class="heading-block">
+            <span class="eyebrow">Chapter I / About</span>
+            <h2>Curious by nature.<br><em>Driven to build.</em></h2>
+          </div>
+        </div>
+        <div class="about-grid reveal">
+          <div></div>
+          <div class="about-copy">
+            <p class="lead">Hi, I'm Ria — a Computer Science &amp; Engineering student at United International University.</p>
+            <p>I enjoy building systems that combine clean interfaces, practical logic and real-world problem solving. My projects span Java desktop applications, full-stack web systems, healthcare UX, voice assistants and IoT automation.</p>
+            <p>I'm especially interested in academia, software development, research-oriented problem solving and creating products that feel simple to use while doing something meaningful underneath.</p>
+            <div class="stats">
+              <div class="stat"><strong>3.85</strong><small>CGPA / 4.00</small></div>
+              <div class="stat"><strong>18+</strong><small>GitHub repositories</small></div>
+              <div class="stat"><strong>6th</strong><small>Runners-up · UIU CSE Project Show</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="academics" class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div class="heading-block">
+            <span class="eyebrow">Chapter II / Academic Results</span>
+            <h2>Academic<br><em>record.</em></h2>
+          </div>
+          <p class="section-lead">Consistent results from SSC through undergraduate study.</p>
+        </div>
+
+        <div class="academic-path bezel reveal">
+          <div class="bezel-core">
+            <div class="path-track">
+              <div class="path-node" data-status="done">
+                <span class="node-year">2018</span>
+                <span class="node-dot"></span>
+                <div class="node-body">
+                  <strong>5.00</strong>
+                  <span class="node-label">SSC</span>
+                  <span class="node-inst">BN College, Dhaka</span>
+                </div>
+              </div>
+              <div class="path-node" data-status="done">
+                <span class="node-year">2020</span>
+                <span class="node-dot"></span>
+                <div class="node-body">
+                  <strong>5.00</strong>
+                  <span class="node-label">HSC</span>
+                  <span class="node-inst">Shaheed Bir Uttam Lt. Anwar Girls College</span>
+                </div>
+              </div>
+              <div class="path-node is-current" data-status="active">
+                <span class="node-year">Continuing</span>
+                <span class="node-dot"></span>
+                <div class="node-body">
+                  <strong>3.85<small>/4.00</small></strong>
+                  <span class="node-label">BSc in CSE</span>
+                  <span class="node-inst">United International University</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div class="heading-block">
+            <span class="eyebrow">Chapter III / Research</span>
+            <h2>Research<br><em>interests.</em></h2>
+          </div>
+          <p class="section-lead">Deep learning work focused on medical image analysis and cancer outcome prediction.</p>
+        </div>
+
+        <div class="card-row research-row reveal">
+          <article class="research-card bezel">
+            <div class="bezel-core">
+              <div class="project-meta">Deep Learning / Medical Image Analysis</div>
+              <h3>Leukemia Cell Classification</h3>
+              <p>Research on classifying leukemia cells using deep learning models to support automated hematology image analysis.</p>
+              <div class="tags"><span>Classification</span><span>Computer Vision</span><span>Healthcare AI</span></div>
+            </div>
+          </article>
+          <article class="research-card bezel">
+            <div class="bezel-core">
+              <div class="project-meta">Deep Learning / Multimodal Integration</div>
+              <h3>Pan-Cancer Survival Rate Prediction</h3>
+              <p>Research on predicting pan-cancer survival rates using deep learning with multimodal data integration.</p>
+              <div class="tags"><span>Survival Prediction</span><span>Multimodal Learning</span><span>Oncology AI</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div class="heading-block">
+            <span class="eyebrow">Chapter IV / Selected Work</span>
+            <h2>Things I've<br><em>built.</em></h2>
+          </div>
+          <p class="section-lead">A selection of academic and personal projects from my development journey.</p>
+        </div>
+
+        <div class="bento reveal">
+          <article class="bcard b01 bezel">
+            <div class="bezel-core">
+              <span class="award-badge">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 6H4a1 1 0 0 0-1 1c0 2.5 1.5 4.5 4 5M17 6h3a1 1 0 0 1 1 1c0 2.5-1.5 4.5-4 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                6th Runners-up · UIU CSE Project Show
+              </span>
+              <div class="project-meta">Java · JavaFX · MySQL · Socket Programming</div>
+              <h3>Multilevel Puzzle Solving Game</h3>
+              <p>A team-based desktop puzzle application with five games, synchronized progression, persistent database tracking and real-time group chat.</p>
+              <ul class="feature-list">
+                <li>Five puzzle types — Tower of Hanoi, Number Guess, Jigsaw, Color Mapping, Crossword</li>
+                <li>Team-based level unlocking with shared progression</li>
+                <li>Real-time multithreaded group chat over Java sockets</li>
+              </ul>
+              <div class="card-foot">
+                <div class="tags"><span>Tower of Hanoi</span><span>Jigsaw</span><span>Crossword</span><span>Multithreading</span></div>
+              </div>
+              <a class="repo-link" href="https://github.com/afiatasnimria/PuzzleSolving-Game" target="_blank" rel="noreferrer">
+                View repository<span class="link-icon">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="bcard b02 bezel">
+            <div class="bezel-core">
+              <div class="project-meta">Figma · UI/UX · Healthcare</div>
+              <h3>PatientCare System</h3>
+              <p>A healthcare platform concept covering doctor and nurse booking, hospital discovery, SOS, ambulance tracking and epidemic alerts.</p>
+              <div class="card-foot">
+                <a class="repo-link" href="https://github.com/afiatasnimria/PatientCare_System" target="_blank" rel="noreferrer">
+                  View repository<span class="link-icon">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bcard b03 bezel">
+            <div class="bezel-core">
+              <div class="project-meta">PHP · MySQL · JavaScript · Bootstrap</div>
+              <h3>TournyMate</h3>
+              <p>A tournament management system with player profiles, statistics, live scores, rankings and automated match scheduling.</p>
+              <div class="card-foot">
+                <a class="repo-link" href="https://github.com/afiatasnimria/Tourny_mate" target="_blank" rel="noreferrer">
+                  View repository<span class="link-icon">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bcard b04 bezel">
+            <div class="bezel-core">
+              <div class="project-meta">Python · Speech Recognition · Google API</div>
+              <h3>Voice Assistant</h3>
+              <p>A voice-powered desktop assistant supporting natural commands, application control, web search, reminders and spoken responses.</p>
+              <div class="card-foot">
+                <a class="repo-link" href="https://github.com/afiatasnimria/VoiceAssistant" target="_blank" rel="noreferrer">
+                  View repository<span class="link-icon">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bcard b05 bezel">
+            <div class="bezel-core">
+              <div class="project-meta">Arduino · C++ · Sensors · IoT</div>
+              <h3>Automated Fish Pond</h3>
+              <p>An IoT-based water-quality monitoring and automation system using temperature, pH, turbidity and gas sensing with automated controls.</p>
+              <div class="card-foot">
+                <a class="repo-link" href="https://github.com/afiatasnimria/Automated-FishPond" target="_blank" rel="noreferrer">
+                  View repository<span class="link-icon">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="chapter">
+      <div class="wrap">
+        <div class="skills-layout">
+          <div class="skills-intro reveal">
+            <span class="eyebrow">Chapter V / Skill Stack</span>
+            <h2 style="margin-top:20px">Tools I<br><em>work with.</em></h2>
+            <p>A practical stack built through coursework, projects and experimentation.</p>
+          </div>
+          <div class="skill-stack reveal">
+            <article class="skill-card bezel">
+              <div class="bezel-core">
+                <div class="skill-label">Languages</div>
+                <div class="skill-items">C · C++ · Java · PHP · JavaScript · Python · SQL · HTML · CSS</div>
+              </div>
+            </article>
+            <article class="skill-card bezel">
+              <div class="bezel-core">
+                <div class="skill-label">Development</div>
+                <div class="skill-items">JavaFX · Scene Builder · Bootstrap · Socket Programming · MySQL</div>
+              </div>
+            </article>
+            <article class="skill-card bezel">
+              <div class="bezel-core">
+                <div class="skill-label">Design</div>
+                <div class="skill-items">Figma · UI/UX Prototyping · Component-based Design</div>
+              </div>
+            </article>
+            <article class="skill-card bezel">
+              <div class="bezel-core">
+                <div class="skill-label">Systems</div>
+                <div class="skill-items">Arduino · Sensors · Servo Motors · L298N Motor Driver · IoT</div>
+              </div>
+            </article>
+            <article class="skill-card bezel">
+              <div class="bezel-core">
+                <div class="skill-label">Tools</div>
+                <div class="skill-items">IntelliJ IDEA · GitHub · Scene Builder</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div class="heading-block">
+            <span class="eyebrow">Chapter VI / Experience &amp; Education</span>
+            <h2>Where I've<br><em>been.</em></h2>
+          </div>
+        </div>
+        <div class="timeline reveal">
+          <article class="tl-card bezel">
+            <div class="bezel-core">
+              <div class="tl-year">2023</div>
+              <div>
+                <h3>Grader — Object Oriented Programming</h3>
+                <p>United International University · Fall 2023</p>
+              </div>
+            </div>
+          </article>
+          <article class="tl-card bezel">
+            <div class="bezel-core">
+              <div class="tl-year">2025</div>
+              <div>
+                <h3>6th Runners-up — CSE Project Show</h3>
+                <p>Advanced Object Oriented Programming · Spring 2025</p>
+              </div>
+            </div>
+          </article>
+          <article class="tl-card bezel">
+            <div class="bezel-core">
+              <div class="tl-year">Now</div>
+              <div>
+                <h3>BSc in Computer Science &amp; Engineering</h3>
+                <p>United International University · CGPA 3.85 / 4.00 · Continuing</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="github-strip">
+      <div class="wrap strip-row reveal">
+        <div>
+          <span class="eyebrow">Open Source / Code</span>
+          <h2>More experiments.<br><em>More learning.</em></h2>
+        </div>
+        <a class="btn btn-ghost" href="https://github.com/afiatasnimria" target="_blank" rel="noreferrer">
+          <span>Explore GitHub</span><span class="btn-icon">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap contact-grid reveal">
+        <div class="contact-intro">
+          <span class="eyebrow">Chapter VII / Let's Talk</span>
+          <h2>Have an idea?<br><em>Let's build it.</em></h2>
+          <p>I'm open to opportunities, collaborations, research projects and interesting software problems.</p>
+          <div class="contact-links">
+            <a class="btn btn-ghost" href="https://github.com/afiatasnimria" target="_blank" rel="noreferrer">
+              <span>GitHub</span><span class="btn-icon">↗</span>
+            </a>
+            <div class="gmail-wrap">
+              <button type="button" class="btn btn-ghost mail-trigger" aria-haspopup="true" aria-expanded="false">
+                <span>Gmail</span><span class="btn-icon">↗</span>
+              </button>
+              <div class="gmail-popover" id="gmailPopover">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aria2231058@bscse.uiu.ac.bd" target="_blank" rel="noreferrer">Open in Gmail ↗</a>
+              </div>
+            </div>
+            <a class="btn btn-ghost" href="https://www.facebook.com/afia.tasnimria" target="_blank" rel="noreferrer">
+              <span>Facebook</span><span class="btn-icon">↗</span>
+            </a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/afia-tasnim-ria-7012563b4/" target="_blank" rel="noreferrer">
+              <span>LinkedIn</span><span class="btn-icon">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap bezel">
+          <div class="bezel-core">
+            <form id="contactForm">
+              <div class="field">
+                <label for="cf-name">Name</label>
+                <input id="cf-name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="cf-email">Email</label>
+                <input id="cf-email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="field">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="message" rows="5" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit" id="cfSubmit">
+                <span id="cfSubmitLabel">Send message</span><span class="btn-icon">↗</span>
+              </button>
+              <p class="field-note" id="cfStatus" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot-row">
+      <span>Afia Tasnim Ria · 2026</span>
+      <span>Build · Learn · Evolve</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
