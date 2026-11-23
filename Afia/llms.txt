@@ -1,0 +1,12 @@
+# Afia Tasnim Ria — Portfolio
+
+> CSE student and software developer building full-stack web systems, Java desktop apps, IoT prototypes, and healthcare UX.
+
+## About
+
+Afia Tasnim Ria is a Computer Science & Engineering student at United International University, Bangladesh. She builds full-stack web applications, Java desktop apps, IoT prototypes, and healthcare UX projects.
+
+## Contact
+
+- GitHub: https://github.com/afiatasnimria
+- LinkedIn: https://www.linkedin.com/in/afia-tasnim-ria-7012563b4/

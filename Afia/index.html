@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="description" content="Portfolio of Afia Tasnim Ria, a CSE student building full-stack web systems, Java desktop apps, IoT prototypes and healthcare UX." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Afia Tasnim Ria" />
+  <title>Afia Tasnim Ria — Portfolio</title>
+
+  <!--
+    NOTE: every URL below uses a placeholder domain (afia-portfolio.vercel.app)
+    since this site isn't deployed yet. Once it has a real domain, replace
+    that placeholder in: this <head> block (canonical + og:url), sitemap.xml,
+    and robots.txt — search "afia-portfolio.vercel.app" in each file.
+  -->
+  <link rel="canonical" href="https://afia-portfolio.vercel.app/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://afia-portfolio.vercel.app/" />
+  <meta property="og:site_name" content="Afia Tasnim Ria — Portfolio" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Afia Tasnim Ria — Portfolio" />
+  <meta property="og:description" content="Portfolio of Afia Tasnim Ria, a CSE student building full-stack web systems, Java desktop apps, IoT prototypes and healthcare UX." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Afia Tasnim Ria — Portfolio" />
+  <meta name="twitter:description" content="Portfolio of Afia Tasnim Ria, a CSE student building full-stack web systems, Java desktop apps, IoT prototypes and healthcare UX." />
+  <!-- og:image / twitter:image intentionally omitted — add a real 1200x630 photo or screenshot, then add <meta property="og:image" content="..."> and <meta name="twitter:image" content="..."> back here. -->
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0A0C'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='17' font-weight='700' fill='%23C4FF3D' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Afia Tasnim Ria",
+    "url": "https://afia-portfolio.vercel.app/",
+    "jobTitle": "Computer Science & Engineering Student",
+    "description": "CSE student, software developer and UI/UX enthusiast building full-stack web systems, Java desktop apps, IoT prototypes and healthcare UX projects.",
+    "email": "mailto:aria2231058@bscse.uiu.ac.bd",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "United International University"
+    },
+    "sameAs": [
+      "https://github.com/afiatasnimria",
+      "https://www.linkedin.com/in/afia-tasnim-ria-7012563b4/",
+      "https://www.facebook.com/afia.tasnimria"
+    ]
+  }
+  </script>
+
+  <!-- Google Search Console: paste the verification meta tag they give you here -->
+  <!-- <meta name="google-site-verification" content="PASTE_YOUR_CODE_HERE" /> -->
+  <link rel="preload" as="font" type="font/woff2" href="fonts/syne-bold.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/ttf" href="fonts/dmsans.ttf" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./vendor/three.module.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#top">Skip to content</a>
+
+  <div class="bg-orbs" aria-hidden="true"></div>
+  <div class="spotlight" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="island" id="island">
+    <a class="brand" href="#top">ATR<span>.</span></a>
+    <div class="island-links">
+      <a href="#about">About</a>
+      <a href="#academics">Academics</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+    </div>
+    <a class="island-cta" href="#contact">
+      <span>Contact</span>
+      <span class="cta-icon" aria-hidden="true">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="menuOverlay" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <nav class="overlay-links">
+      <a href="#about" style="--i:0">About</a>
+      <a href="#academics" style="--i:1">Academics</a>
+      <a href="#research" style="--i:2">Research</a>
+      <a href="#projects" style="--i:3">Projects</a>
+      <a href="#skills" style="--i:4">Skills</a>
+      <a href="#experience" style="--i:5">Experience</a>
+      <a href="#contact" style="--i:6">Contact</a>
+    </nav>
+    <div class="overlay-foot">
+      <a href="https://github.com/afiatasnimria" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a href="Afia-CV.pdf" target="_blank" rel="noreferrer">CV ↗</a>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow"><span class="dot"></span>CSE Student · Builder · UI/UX Enthusiast</span>
+          <h1 class="hero-title">Afia Tasnim<br><span class="accent-italic">Ria</span></h1>
+          <p class="hero-lead">I turn ideas into useful, interactive software — from collaborative desktop applications to web systems, IoT prototypes and thoughtful interface design.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="Afia-CV.pdf" target="_blank" rel="noreferrer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>View CV</span>
+            </a>
+            <a class="btn btn-ghost" href="#contact">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span>Get in touch</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="portrait">
+          <div class="portrait-arc portrait-arc-outer" aria-hidden="true"></div>
+          <div class="portrait-arc portrait-arc-inner" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <img src="afia-sticker.png" alt="Afia Tasnim Ria" draggable="false" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div class="heading-block">
+            <span class="eyebrow">About</span>
+            <h2>Curious by nature.<br><em>Driven to build.</em></h2>
+          </div>
+        </div>
+        <div class="about-grid reveal">
+          <div class="about-snapshot bezel">
+            <div class="bezel-core about-snap-core">
+              <div class="snap-row">
+                <span class="snap-label">Currently</span>
+                <span class="snap-value">BSc in CSE<small>United International University · 3.89 GPA</small></span>
+              </div>
+              <div class="snap-divider"></div>
+              <div class="snap-row">
+                <span class="snap-label">Focus</span>
+                <span class="snap-value">Full-Stack Dev<small>Java · Web Systems · IoT · Healthcare UX</small></span>
+              </div>
+              <div class="snap-divider"></div>
+              <div class="snap-row">
+                <span class="snap-label">Interested in</span>
+                <span class="snap-value">Research &amp; Collaboration<small>Software problems with real-world impact</small></span>
+              </div>
+            </div>
+          </div>
+          <div class="about-copy">
+            <p class="lead">Hi, I'm Ria — a Computer Science &amp; Engineering student at United International University.</p>
+            <p>I enjoy building systems that combine clean interfaces, practical logic and real-world problem solving. My projects span Java desktop applications, full-stack web systems, healthcare UX, voice assistants and IoT automation.</p>
+            <p>I'm especially interested in academia, software development, research-oriented problem solving and creating products that feel simple to use while doing something meaningful underneath.</p>
+            <div class="stats">
+              <div class="stat"><strong>3.89</strong><small>CGPA / 4.00</small></div>
+              <div class="stat"><strong>18+</strong><small>GitHub repositories</small></div>
+              <div class="stat"><strong>6th</strong><small>Runners-up · UIU CSE Project Show</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="academics" class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div class="heading-block">
+            <span class="eyebrow">Academic Results</span>
+            <h2>Academic<br><em>record.</em></h2>
+          </div>
+          <p class="section-lead">Consistent results from SSC through undergraduate study.</p>
+        </div>
+
+        <div class="academic-path bezel reveal">
+          <div class="bezel-core">
+            <div class="path-track">
+              <div class="path-node" data-status="done">
+                <span class="node-year">2018</span>
+                <span class="node-dot"></span>
+                <div class="node-body">
+                  <strong>5.00</strong>
+                  <span class="node-label">SSC</span>
+                  <span class="node-inst">BN College, Dhaka</span>
+                </div>
+              </div>
+              <div class="path-node" data-status="done">
+                <span class="node-year">2020</span>
+                <span class="node-dot"></span>
+                <div class="node-body">
+                  <strong>5.00</strong>
+                  <span class="node-label">HSC</span>
+                  <span class="node-inst">Shaheed Bir Uttam Lt. Anwar Girls College</span>
+                </div>
+              </div>
+              <div class="path-node is-current" data-status="active">
+                <span class="node-year">Continuing</span>
+                <span class="node-dot"></span>
+                <div class="node-body">
+                  <strong>3.89<small>/4.00</small></strong>
+                  <span class="node-label">BSc in CSE</span>
+                  <span class="node-inst">United International University</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div class="heading-block">
+            <span class="eyebrow">Research</span>
+            <h2>Research<br><em>interests.</em></h2>
+          </div>
+          <p class="section-lead">Deep learning work focused on medical image analysis and cancer outcome prediction.</p>
+        </div>
+
+        <div class="card-row research-row reveal">
+          <article class="research-card bezel">
+            <div class="bezel-core">
+              <div class="project-meta">Deep Learning / Medical Image Analysis</div>
+              <h3>Leukemia Cell Classification</h3>
+              <p>Research on classifying leukemia cells using deep learning models to support automated hematology image analysis.</p>
+              <div class="tags"><span>Classification</span><span>Computer Vision</span><span>Healthcare AI</span></div>
+            </div>
+          </article>
+          <article class="research-card bezel">
+            <div class="bezel-core">
+              <div class="project-meta">Deep Learning / Multimodal Integration</div>
+              <h3>Pan-Cancer Survival Rate Prediction</h3>
+              <p>Research on predicting pan-cancer survival rates using deep learning with multimodal data integration.</p>
+              <div class="tags"><span>Survival Prediction</span><span>Multimodal Learning</span><span>Oncology AI</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="chapter projects-chapter">
+      <div class="wrap">
+        <div class="chapter-head projects-head">
+          <div class="heading-block">
+            <span class="eyebrow">Featured Projects</span>
+            <h2 class="projects-title">PROJECTS</h2>
+          </div>
+        </div>
+
+        <div class="proj-stage-wrap reveal" tabindex="0" aria-label="Project carousel — use arrow keys to browse">
+          <div class="proj-stage">
+            <article class="proj-card" data-index="0">
+              <button class="proj-select" type="button" aria-label="Show Multilevel Puzzle Solving Game"></button>
+              <div class="proj-card-inner">
+                <span class="proj-card-bar" aria-hidden="true"></span>
+                <div class="proj-copy">
+                  <div>
+                    <span class="proj-meta">01 // Java</span>
+                    <h3 class="proj-title">Multilevel Puzzle Solving Game</h3>
+                    <p class="proj-desc">A team puzzle platform with five games, real-time chat and UIU Project Show recognition.</p>
+                  </div>
+                  <div class="proj-bottom">
+                    <div class="proj-tags"><span>Java</span><span>JavaFX</span><span>MySQL</span><span title="Sockets">+1</span></div>
+                    <a class="proj-cta" href="https://github.com/afiatasnimria/PuzzleSolving-Game" target="_blank" rel="noopener noreferrer">Explore Case Study <span aria-hidden="true">→</span></a>
+                  </div>
+                </div>
+                <div class="proj-visual">
+                  <div class="proj-window">
+                    <div class="proj-window-bar"><span class="pwd"></span><span class="pwd"></span><span class="pwd"></span><span class="pwt">puzzle.exe</span></div>
+                    <div class="proj-window-body">
+                      <div class="pw-crossword">
+                        <div class="pw-row"><span class="pw-cell lit">P</span><span class="pw-cell">U</span><span class="pw-cell lit">Z</span><span class="pw-cell">Z</span><span class="pw-cell lit">L</span><span class="pw-cell">E</span></div>
+                        <div class="pw-row"><span class="pw-cell">G</span><span class="pw-cell lit">A</span><span class="pw-cell">M</span><span class="pw-cell lit">E</span><span class="pw-cell">S</span><span class="pw-cell lit">+</span></div>
+                        <div class="pw-row"><span class="pw-cell lit">5</span><span class="pw-cell">L</span><span class="pw-cell lit">V</span><span class="pw-cell">L</span><span class="pw-cell lit">S</span><span class="pw-cell">·</span></div>
+                        <div class="pw-meta">SYNCED GROUP PROGRESSION · CHAT ONLINE</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj-card" data-index="1">
+              <button class="proj-select" type="button" aria-label="Show PatientCare System"></button>
+              <div class="proj-card-inner">
+                <span class="proj-card-bar" aria-hidden="true"></span>
+                <div class="proj-copy">
+                  <div>
+                    <span class="proj-meta">02 // UI/UX</span>
+                    <h3 class="proj-title">PatientCare System</h3>
+                    <p class="proj-desc">A healthcare platform covering doctor booking, SOS and ambulance tracking — designed with urgency UX as the first principle.</p>
+                  </div>
+                  <div class="proj-bottom">
+                    <div class="proj-tags"><span>Figma</span><span>UI/UX</span><span>Prototyping</span></div>
+                    <a class="proj-cta" href="https://github.com/afiatasnimria/PatientCare_System" target="_blank" rel="noopener noreferrer">Explore Case Study <span aria-hidden="true">→</span></a>
+                  </div>
+                </div>
+                <div class="proj-visual">
+                  <div class="proj-window">
+                    <div class="proj-window-bar"><span class="pwd"></span><span class="pwd"></span><span class="pwd"></span><span class="pwt">patientcare.app</span></div>
+                    <div class="proj-window-body">
+                      <div class="pw-healthcare">
+                        <div class="pw-doc-card"><span class="pw-avatar">DR</span><span class="pw-doc-info"><span class="pw-doc-name">Dr. A. Rahman</span><span class="pw-doc-spec">General Physician</span></span><span class="pw-available-badge">Available</span></div>
+                        <div class="pw-btn-row"><span class="pw-action book">BOOK APPOINTMENT</span><span class="pw-action sos">SOS</span></div>
+                        <div class="pw-ambulance-row">AMBULANCE · 2.4 KM AWAY · ETA 08 MIN</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj-card" data-index="2">
+              <button class="proj-select" type="button" aria-label="Show TournyMate"></button>
+              <div class="proj-card-inner">
+                <span class="proj-card-bar" aria-hidden="true"></span>
+                <div class="proj-copy">
+                  <div>
+                    <span class="proj-meta">03 // PHP</span>
+                    <h3 class="proj-title">TournyMate</h3>
+                    <p class="proj-desc">A multi-role tournament platform with real-time leaderboards, bracket generation and match scheduling.</p>
+                  </div>
+                  <div class="proj-bottom">
+                    <div class="proj-tags"><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span title="JavaScript">+1</span></div>
+                    <a class="proj-cta" href="https://github.com/afiatasnimria/Tourny_mate" target="_blank" rel="noopener noreferrer">Explore Case Study <span aria-hidden="true">→</span></a>
+                  </div>
+                </div>
+                <div class="proj-visual">
+                  <div class="proj-window">
+                    <div class="proj-window-bar"><span class="pwd"></span><span class="pwd"></span><span class="pwd"></span><span class="pwt">tournymate.io</span></div>
+                    <div class="proj-window-body">
+                      <div class="pw-leaderboard">
+                        <div class="pw-lb-head"><span>#</span><span>PLAYER</span><span>SCORE</span><span>STREAK</span></div>
+                        <div class="pw-lb-row gold"><span>1</span><span>rafid</span><span>2480</span><span>W4</span></div>
+                        <div class="pw-lb-row silver"><span>2</span><span>tasnim</span><span>2315</span><span>W3</span></div>
+                        <div class="pw-lb-row bronze"><span>3</span><span>rio</span><span>2104</span><span>W2</span></div>
+                        <div class="pw-lb-match">NEXT MATCH · 19:30 · BRACKET ROUND 2</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj-card" data-index="3">
+              <button class="proj-select" type="button" aria-label="Show Voice-Controlled Assistant"></button>
+              <div class="proj-card-inner">
+                <span class="proj-card-bar" aria-hidden="true"></span>
+                <div class="proj-copy">
+                  <div>
+                    <span class="proj-meta">04 // Python</span>
+                    <h3 class="proj-title">Voice-Controlled Assistant</h3>
+                    <p class="proj-desc">A natural language voice assistant that runs system commands, searches the web and responds in speech — no cloud required.</p>
+                  </div>
+                  <div class="proj-bottom">
+                    <div class="proj-tags"><span>Python</span><span>Google Speech API</span><span>pyttsx3</span></div>
+                    <a class="proj-cta" href="https://github.com/afiatasnimria/VoiceAssistant" target="_blank" rel="noopener noreferrer">Explore Case Study <span aria-hidden="true">→</span></a>
+                  </div>
+                </div>
+                <div class="proj-visual">
+                  <div class="proj-window">
+                    <div class="proj-window-bar"><span class="pwd"></span><span class="pwd"></span><span class="pwd"></span><span class="pwt">assistant.py</span></div>
+                    <div class="proj-window-body">
+                      <div class="pw-terminal">
+                        <div class="pw-tl"><span class="pw-p">&gt;</span> listening...</div>
+                        <div class="pw-tl dim"><span class="pw-you">you:</span> open the browser</div>
+                        <div class="pw-tl ok"><span class="pw-p">&gt;</span> launching default browser</div>
+                        <div class="pw-tl dim"><span class="pw-you">you:</span> what time is it</div>
+                        <div class="pw-tl ok"><span class="pw-p">&gt;</span> 10:42 PM · Dhaka</div>
+                        <div class="pw-tl"><span class="pw-p">&gt;</span> ready for next command</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj-card" data-index="4">
+              <button class="proj-select" type="button" aria-label="Show Automated Fish Pond"></button>
+              <div class="proj-card-inner">
+                <span class="proj-card-bar" aria-hidden="true"></span>
+                <div class="proj-copy">
+                  <div>
+                    <span class="proj-meta">05 // Arduino</span>
+                    <h3 class="proj-title">Automated Fish Pond</h3>
+                    <p class="proj-desc">An IoT monitoring system that reads pH, temperature and oxygen levels and automates water pump and aeration responses.</p>
+                  </div>
+                  <div class="proj-bottom">
+                    <div class="proj-tags"><span>Arduino</span><span>C</span><span>IoT Sensors</span><span title="L298N">+1</span></div>
+                    <a class="proj-cta" href="https://github.com/afiatasnimria/Automated-FishPond" target="_blank" rel="noopener noreferrer">Explore Case Study <span aria-hidden="true">→</span></a>
+                  </div>
+                </div>
+                <div class="proj-visual">
+                  <div class="proj-window">
+                    <div class="proj-window-bar"><span class="pwd"></span><span class="pwd"></span><span class="pwd"></span><span class="pwt">pond-monitor.ino</span></div>
+                    <div class="proj-window-body">
+                      <div class="pw-sensors">
+                        <div class="pw-sensor"><span class="pw-sl">pH</span><span class="pw-bar"><span class="pw-fill" style="width:72%"></span></span><span class="pw-sv">7.2</span><span class="pw-ss ok">OK</span></div>
+                        <div class="pw-sensor"><span class="pw-sl">TEMP</span><span class="pw-bar"><span class="pw-fill" style="width:64%"></span></span><span class="pw-sv">26.4</span><span class="pw-ss ok">OK</span></div>
+                        <div class="pw-sensor"><span class="pw-sl">OXYGEN</span><span class="pw-bar"><span class="pw-fill warn" style="width:38%"></span></span><span class="pw-sv">5.1</span><span class="pw-ss warn">LOW</span></div>
+                        <div class="pw-sensor"><span class="pw-sl">PUMP</span><span class="pw-bar"><span class="pw-fill" style="width:88%"></span></span><span class="pw-sv">ON</span><span class="pw-ss ok">AUTO</span></div>
+                        <div class="pw-meta">AERATION TRIGGERED · THRESHOLD 5.5 MG/L</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="proj-dots" role="group" aria-label="Choose a project">
+            <button class="proj-dot is-active" type="button" aria-label="Go to Multilevel Puzzle Solving Game" aria-pressed="true"></button>
+            <button class="proj-dot" type="button" aria-label="Go to PatientCare System" aria-pressed="false"></button>
+            <button class="proj-dot" type="button" aria-label="Go to TournyMate" aria-pressed="false"></button>
+            <button class="proj-dot" type="button" aria-label="Go to Voice-Controlled Assistant" aria-pressed="false"></button>
+            <button class="proj-dot" type="button" aria-label="Go to Automated Fish Pond" aria-pressed="false"></button>
+            <button class="proj-pause" type="button" aria-label="Pause carousel" aria-pressed="false">Pause</button>
+          </div>
+          <p class="sr-only" id="projStatus" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="chapter expertise-chapter">
+      <div class="wrap">
+        <div class="chapter-head expertise-head">
+          <div class="heading-block">
+            <span class="eyebrow">Areas of Practice</span>
+            <h2 class="expertise-title">EXPERTISE</h2>
+          </div>
+        </div>
+
+        <div class="expertise-list reveal">
+          <div class="expertise-glow" aria-hidden="true"></div>
+
+          <article class="expertise-row" data-tone="emerald">
+            <div class="expertise-row-head">
+              <span class="expertise-index">01</span>
+              <h3 class="expertise-category">Programming Languages</h3>
+            </div>
+            <div class="expertise-pills">
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-code"/></svg>Java</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-code"/></svg>Python</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-code"/></svg>PHP</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-code"/></svg>JavaScript</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-code"/></svg>C</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-code"/></svg>C++</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-code"/></svg>SQL</span>
+            </div>
+          </article>
+
+          <article class="expertise-row" data-tone="violet">
+            <div class="expertise-row-head">
+              <span class="expertise-index">02</span>
+              <h3 class="expertise-category">Web Development</h3>
+            </div>
+            <div class="expertise-pills">
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-layers"/></svg>HTML</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-layers"/></svg>CSS</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-layers"/></svg>Bootstrap</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-layers"/></svg>JavaScript</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-layers"/></svg>PHP</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-layers"/></svg>REST APIs</span>
+            </div>
+          </article>
+
+          <article class="expertise-row" data-tone="emerald">
+            <div class="expertise-row-head">
+              <span class="expertise-index">03</span>
+              <h3 class="expertise-category">Frameworks &amp; Libraries</h3>
+            </div>
+            <div class="expertise-pills">
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-box"/></svg>JavaFX</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-box"/></svg>JDBC</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-box"/></svg>Scene Builder</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-box"/></svg>Socket Programming</span>
+            </div>
+          </article>
+
+          <article class="expertise-row" data-tone="violet">
+            <div class="expertise-row-head">
+              <span class="expertise-index">04</span>
+              <h3 class="expertise-category">Databases</h3>
+            </div>
+            <div class="expertise-pills">
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-db"/></svg>MySQL</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-db"/></svg>SQL</span>
+            </div>
+          </article>
+
+          <article class="expertise-row" data-tone="emerald">
+            <div class="expertise-row-head">
+              <span class="expertise-index">05</span>
+              <h3 class="expertise-category">Design &amp; Prototyping</h3>
+            </div>
+            <div class="expertise-pills">
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-palette"/></svg>Figma</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-palette"/></svg>Canva</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-palette"/></svg>UI/UX</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-palette"/></svg>Prototyping</span>
+            </div>
+          </article>
+
+          <article class="expertise-row" data-tone="violet">
+            <div class="expertise-row-head">
+              <span class="expertise-index">06</span>
+              <h3 class="expertise-category">IoT &amp; Hardware</h3>
+            </div>
+            <div class="expertise-pills">
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-cpu"/></svg>Arduino</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-cpu"/></svg>L298N Driver</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-cpu"/></svg>IoT Sensors</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-cpu"/></svg>C</span>
+            </div>
+          </article>
+
+          <article class="expertise-row" data-tone="emerald">
+            <div class="expertise-row-head">
+              <span class="expertise-index">07</span>
+              <h3 class="expertise-category">Tools &amp; Platforms</h3>
+            </div>
+            <div class="expertise-pills">
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-git"/></svg>Git</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-git"/></svg>GitHub</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-git"/></svg>VS Code</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-git"/></svg>IntelliJ IDEA</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-git"/></svg>Vercel</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-git"/></svg>Postman</span>
+            </div>
+          </article>
+
+          <article class="expertise-row" data-tone="violet">
+            <div class="expertise-row-head">
+              <span class="expertise-index">08</span>
+              <h3 class="expertise-category">Research &amp; AI</h3>
+            </div>
+            <div class="expertise-pills">
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-flask"/></svg>Deep Learning</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-flask"/></svg>Computer Vision</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-flask"/></svg>Multimodal Learning</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-flask"/></svg>Healthcare AI</span>
+              <span class="expertise-pill"><svg class="expertise-pill-icon" aria-hidden="true"><use href="#exp-icon-flask"/></svg>Google Speech API</span>
+            </div>
+          </article>
+        </div>
+
+        <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <symbol id="exp-icon-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+          <symbol id="exp-icon-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+          <symbol id="exp-icon-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></symbol>
+          <symbol id="exp-icon-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></symbol>
+          <symbol id="exp-icon-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".6"/><circle cx="17.5" cy="10.5" r=".6"/><circle cx="8.5" cy="7.5" r=".6"/><circle cx="6.5" cy="12.5" r=".6"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.5-.5 1.5-1.5 0-.4-.15-.76-.4-1.02-.25-.26-.4-.62-.4-1.02 0-.83.67-1.5 1.5-1.5H16c3.31 0 6-2.69 6-6 0-5.52-4.48-10-10-10z"/></symbol>
+          <symbol id="exp-icon-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></symbol>
+          <symbol id="exp-icon-git" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 9v12M18 15V9a3 3 0 0 0-3-3H9"/></symbol>
+          <symbol id="exp-icon-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-5.5 9A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7 15h10"/></symbol>
+        </svg>
+      </div>
+    </section>
+
+    <section id="soft-skills" class="chapter soft-chapter">
+      <div class="wrap">
+        <div class="chapter-head soft-head">
+          <div class="heading-block">
+            <span class="eyebrow">Cognitive Strengths</span>
+            <h2 class="soft-title">SOFT SKILLS</h2>
+          </div>
+        </div>
+
+        <div class="soft-orbit reveal">
+          <div class="soft-orbit-track"></div>
+
+          <div class="soft-core" id="softCore" style="--panel-accent:#176B5A;--panel-glow:rgba(23,107,90,.18)">
+            <div class="soft-core-grid"></div>
+            <div class="soft-core-glow"></div>
+            <div class="soft-holo">
+              <div class="soft-ring soft-ring-1"></div>
+              <div class="soft-ring soft-ring-2"></div>
+              <div class="soft-ring soft-ring-3"></div>
+              <div class="soft-holo-center" id="softHoloCenter"><svg width="22" height="22" aria-hidden="true"><use href="#ss-brain"/></svg></div>
+            </div>
+            <div class="soft-hud soft-hud-top">COGNITIVE STATE: <span class="hud-value">OPTIMAL</span></div>
+            <div class="soft-hud soft-hud-left">FOCUS DIRECTIVE<br><span class="hud-value" id="softDirective">DATA SYNTHESIS</span></div>
+            <div class="soft-hud soft-hud-right">SYNAPSE LINK<br><span class="hud-value">CONNECTED</span></div>
+            <div class="soft-hud soft-hud-bottom">INTELLIGENCE CORE — <span class="hud-value" id="softIndex">01</span></div>
+            <div class="soft-details">
+              <h3 class="soft-panel-title" id="softPanelTitle">Analytical Thinking</h3>
+              <p class="soft-panel-desc" id="softPanelDesc">Processing complex datasets to extract actionable insights and drive strategic decision-making.</p>
+            </div>
+          </div>
+
+          <button class="soft-node is-active" type="button" style="top:35px;left:335px;--node-accent:#176B5A;--node-glow:rgba(23,107,90,.4)"
+                  data-title="Analytical Thinking" data-desc="Processing complex datasets to extract actionable insights and drive strategic decision-making." data-directive="DATA SYNTHESIS" data-index="01">
+            <span class="soft-node-index">P01</span>
+            <span class="soft-node-icon"><svg width="20" height="20" aria-hidden="true"><use href="#ss-brain"/></svg></span>
+            <span class="soft-node-label">Analytical Thinking</span>
+          </button>
+
+          <button class="soft-node" type="button" style="top:123px;left:547px;--node-accent:#1F6B43;--node-glow:rgba(31,107,67,.4)"
+                  data-title="Adaptability &amp; Fast Learning" data-desc="Rapidly mastering new technologies, frameworks, and domain-specific methodologies." data-directive="RAPID ADAPTATION" data-index="02">
+            <span class="soft-node-index">P02</span>
+            <span class="soft-node-icon"><svg width="20" height="20" aria-hidden="true"><use href="#ss-zap"/></svg></span>
+            <span class="soft-node-label">Adaptability &amp; Fast Learning</span>
+          </button>
+
+          <button class="soft-node" type="button" style="top:335px;left:635px;--node-accent:#176B5A;--node-glow:rgba(23,107,90,.4)"
+                  data-title="Communication &amp; Collaboration" data-desc="Bridging the gap between technical and non-technical stakeholders for seamless project execution." data-directive="TEAM INTEGRATION" data-index="03">
+            <span class="soft-node-index">P03</span>
+            <span class="soft-node-icon"><svg width="20" height="20" aria-hidden="true"><use href="#ss-users"/></svg></span>
+            <span class="soft-node-label">Communication &amp; Collaboration</span>
+          </button>
+
+          <button class="soft-node" type="button" style="top:547px;left:547px;--node-accent:#1F6B43;--node-glow:rgba(31,107,67,.4)"
+                  data-title="Attention to Detail" data-desc="Ensuring extreme precision in data validation, code reviews, and quality assurance processes." data-directive="PRECISION REVIEW" data-index="04">
+            <span class="soft-node-index">P04</span>
+            <span class="soft-node-icon"><svg width="20" height="20" aria-hidden="true"><use href="#ss-check"/></svg></span>
+            <span class="soft-node-label">Attention to Detail</span>
+          </button>
+
+          <button class="soft-node" type="button" style="top:635px;left:335px;--node-accent:#176B5A;--node-glow:rgba(23,107,90,.4)"
+                  data-title="Leadership &amp; Coordination" data-desc="Steering cross-functional teams toward shared goals with clarity and structured coordination." data-directive="SHARED DIRECTION" data-index="05">
+            <span class="soft-node-index">P05</span>
+            <span class="soft-node-icon"><svg width="20" height="20" aria-hidden="true"><use href="#ss-target"/></svg></span>
+            <span class="soft-node-label">Leadership &amp; Coordination</span>
+          </button>
+
+          <button class="soft-node" type="button" style="top:547px;left:123px;--node-accent:#1F6B43;--node-glow:rgba(31,107,67,.4)"
+                  data-title="Mentorship &amp; Team Support" data-desc="Empowering peers by sharing knowledge, guiding technical growth, and fostering a supportive culture." data-directive="GROWTH SUPPORT" data-index="06">
+            <span class="soft-node-index">P06</span>
+            <span class="soft-node-icon"><svg width="20" height="20" aria-hidden="true"><use href="#ss-heart"/></svg></span>
+            <span class="soft-node-label">Mentorship &amp; Team Support</span>
+          </button>
+
+          <button class="soft-node" type="button" style="top:335px;left:35px;--node-accent:#176B5A;--node-glow:rgba(23,107,90,.4)"
+                  data-title="Creative Problem Solving" data-desc="Approaching roadblocks from unconventional angles to engineer elegant, scalable solutions." data-directive="FRESH PERSPECTIVE" data-index="07">
+            <span class="soft-node-index">P07</span>
+            <span class="soft-node-icon"><svg width="20" height="20" aria-hidden="true"><use href="#ss-bulb"/></svg></span>
+            <span class="soft-node-label">Creative Problem Solving</span>
+          </button>
+
+          <button class="soft-node" type="button" style="top:123px;left:123px;--node-accent:#1F6B43;--node-glow:rgba(31,107,67,.4)"
+                  data-title="Organizational Skills" data-desc="Managing timelines, deliverables, and complex workflows with structured efficiency." data-directive="STRUCTURED FLOW" data-index="08">
+            <span class="soft-node-index">P08</span>
+            <span class="soft-node-icon"><svg width="20" height="20" aria-hidden="true"><use href="#ss-sliders"/></svg></span>
+            <span class="soft-node-label">Organizational Skills</span>
+          </button>
+        </div>
+
+        <div class="soft-cards">
+          <article class="soft-card" style="--mob-accent:#176B5A;--mob-glow:rgba(23,107,90,.16)">
+            <div class="soft-card-head"><span class="soft-card-icon"><svg width="18" height="18" aria-hidden="true"><use href="#ss-brain"/></svg></span><h3 class="soft-card-title">Analytical Thinking</h3></div>
+            <p class="soft-card-desc">Processing complex datasets to extract actionable insights and drive strategic decision-making.</p>
+          </article>
+          <article class="soft-card" style="--mob-accent:#1F6B43;--mob-glow:rgba(31,107,67,.16)">
+            <div class="soft-card-head"><span class="soft-card-icon"><svg width="18" height="18" aria-hidden="true"><use href="#ss-zap"/></svg></span><h3 class="soft-card-title">Adaptability &amp; Fast Learning</h3></div>
+            <p class="soft-card-desc">Rapidly mastering new technologies, frameworks, and domain-specific methodologies.</p>
+          </article>
+          <article class="soft-card" style="--mob-accent:#176B5A;--mob-glow:rgba(23,107,90,.16)">
+            <div class="soft-card-head"><span class="soft-card-icon"><svg width="18" height="18" aria-hidden="true"><use href="#ss-users"/></svg></span><h3 class="soft-card-title">Communication &amp; Collaboration</h3></div>
+            <p class="soft-card-desc">Bridging the gap between technical and non-technical stakeholders for seamless project execution.</p>
+          </article>
+          <article class="soft-card" style="--mob-accent:#1F6B43;--mob-glow:rgba(31,107,67,.16)">
+            <div class="soft-card-head"><span class="soft-card-icon"><svg width="18" height="18" aria-hidden="true"><use href="#ss-check"/></svg></span><h3 class="soft-card-title">Attention to Detail</h3></div>
+            <p class="soft-card-desc">Ensuring extreme precision in data validation, code reviews, and quality assurance processes.</p>
+          </article>
+          <article class="soft-card" style="--mob-accent:#176B5A;--mob-glow:rgba(23,107,90,.16)">
+            <div class="soft-card-head"><span class="soft-card-icon"><svg width="18" height="18" aria-hidden="true"><use href="#ss-target"/></svg></span><h3 class="soft-card-title">Leadership &amp; Coordination</h3></div>
+            <p class="soft-card-desc">Steering cross-functional teams toward shared goals with clarity and structured coordination.</p>
+          </article>
+          <article class="soft-card" style="--mob-accent:#1F6B43;--mob-glow:rgba(31,107,67,.16)">
+            <div class="soft-card-head"><span class="soft-card-icon"><svg width="18" height="18" aria-hidden="true"><use href="#ss-heart"/></svg></span><h3 class="soft-card-title">Mentorship &amp; Team Support</h3></div>
+            <p class="soft-card-desc">Empowering peers by sharing knowledge, guiding technical growth, and fostering a supportive culture.</p>
+          </article>
+          <article class="soft-card" style="--mob-accent:#176B5A;--mob-glow:rgba(23,107,90,.16)">
+            <div class="soft-card-head"><span class="soft-card-icon"><svg width="18" height="18" aria-hidden="true"><use href="#ss-bulb"/></svg></span><h3 class="soft-card-title">Creative Problem Solving</h3></div>
+            <p class="soft-card-desc">Approaching roadblocks from unconventional angles to engineer elegant, scalable solutions.</p>
+          </article>
+          <article class="soft-card" style="--mob-accent:#1F6B43;--mob-glow:rgba(31,107,67,.16)">
+            <div class="soft-card-head"><span class="soft-card-icon"><svg width="18" height="18" aria-hidden="true"><use href="#ss-sliders"/></svg></span><h3 class="soft-card-title">Organizational Skills</h3></div>
+            <p class="soft-card-desc">Managing timelines, deliverables, and complex workflows with structured efficiency.</p>
+          </article>
+        </div>
+
+        <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <symbol id="ss-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2z"/></symbol>
+          <symbol id="ss-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+          <symbol id="ss-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+          <symbol id="ss-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
+          <symbol id="ss-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+          <symbol id="ss-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+          <symbol id="ss-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></symbol>
+          <symbol id="ss-sliders" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></symbol>
+        </svg>
+      </div>
+    </section>
+
+    <section id="experience" class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div class="heading-block">
+            <span class="eyebrow">Experience &amp; Education</span>
+            <h2>Where I've<br><em>been.</em></h2>
+          </div>
+        </div>
+        <div class="timeline reveal">
+          <article class="tl-card bezel">
+            <div class="bezel-core">
+              <div class="tl-year">2023</div>
+              <div>
+                <h3>Grader — Object Oriented Programming</h3>
+                <p>United International University · Fall 2023</p>
+              </div>
+            </div>
+          </article>
+          <article class="tl-card bezel">
+            <div class="bezel-core">
+              <div class="tl-year">2025</div>
+              <div>
+                <h3>6th Runners-up — CSE Project Show</h3>
+                <p>Advanced Object Oriented Programming · Spring 2025</p>
+              </div>
+            </div>
+          </article>
+          <article class="tl-card bezel">
+            <div class="bezel-core">
+              <div class="tl-year">Now</div>
+              <div>
+                <h3>BSc in Computer Science &amp; Engineering</h3>
+                <p>United International University · CGPA 3.89 / 4.00 · Continuing</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="github-strip">
+      <div class="wrap strip-row reveal">
+        <div>
+          <span class="eyebrow">Open Source / Code</span>
+          <h2>More experiments.<br><em>More learning.</em></h2>
+        </div>
+        <a class="btn btn-ghost" href="https://github.com/afiatasnimria" target="_blank" rel="noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          <span>Explore GitHub</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap contact-grid reveal">
+        <div class="contact-intro">
+          <span class="eyebrow">Let's Talk</span>
+          <h2>Have an idea?<br><em>Let's build it.</em></h2>
+          <p>I'm open to opportunities, collaborations, research projects and interesting software problems.</p>
+          <div class="contact-links">
+            <a class="social-icon-btn" href="https://github.com/afiatasnimria" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+            <div class="gmail-wrap">
+              <button type="button" class="social-icon-btn mail-trigger" aria-haspopup="true" aria-expanded="false" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+              </button>
+              <div class="gmail-popover" id="gmailPopover">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aria2231058@bscse.uiu.ac.bd" target="_blank" rel="noreferrer">Open in Gmail ↗</a>
+              </div>
+            </div>
+            <a class="social-icon-btn" href="https://www.facebook.com/afia.tasnimria" target="_blank" rel="noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a class="social-icon-btn" href="https://www.linkedin.com/in/afia-tasnim-ria-7012563b4/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap bezel">
+          <div class="bezel-core">
+            <form id="contactForm">
+              <div class="sr-only" aria-hidden="true">
+                <label for="cf-website">Website</label>
+                <input id="cf-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+              </div>
+              <div class="field">
+                <label for="cf-name">Name</label>
+                <input id="cf-name" name="name" type="text" autocomplete="name" maxlength="100" required />
+              </div>
+              <div class="field">
+                <label for="cf-email">Email</label>
+                <input id="cf-email" name="email" type="email" autocomplete="email" maxlength="200" required />
+              </div>
+              <div class="field">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="message" rows="5" maxlength="4000" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit" id="cfSubmit">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                <span id="cfSubmitLabel">Send message</span>
+              </button>
+              <p class="field-note" id="cfStatus" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot-row">
+      <span>Afia Tasnim Ria · 2026</span>
+      <span>Build · Learn · Evolve</span>
+    </div>
+  </footer>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
