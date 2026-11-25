@@ -257,7 +257,7 @@ if (expertiseList) {
   const placeGlow = (row) => {
     glow.style.top = `${row.offsetTop + row.offsetHeight / 2}px`;
     glow.style.backgroundColor = row.dataset.tone === 'violet'
-      ? 'rgba(23,107,90,.5)'
+      ? 'rgba(109,92,231,.5)'
       : 'rgba(31,107,67,.5)';
   };
 
