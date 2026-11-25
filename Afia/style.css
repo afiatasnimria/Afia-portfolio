@@ -161,8 +161,6 @@ a:focus-visible,button:focus-visible{
   color:var(--muted);transition:color .3s var(--ease);
 }
 .island-links a:hover{color:var(--ink)}
-.island-links a.nav-research{color:var(--violet-text)}
-.island-links a.nav-research::after{content:"";display:inline-block;width:5px;height:5px;margin-left:6px;border-radius:50%;background:var(--violet);box-shadow:0 0 10px rgba(109,92,231,.8)}
 .island-cta{
   display:inline-flex;align-items:center;gap:2px;flex:none;
   padding:7px 7px 7px 20px;border-radius:var(--r-pill);
@@ -213,7 +211,6 @@ a:focus-visible,button:focus-visible{
   transition-delay:calc(var(--i) * 55ms);
 }
 .menu-overlay.open .overlay-links a{opacity:1;transform:translateY(0)}
-.overlay-links a.nav-research{color:var(--violet-text)}
 .overlay-foot{display:flex;gap:28px;flex-wrap:wrap;
   opacity:0;transform:translateY(24px);
   transition:opacity .6s var(--ease) .4s,transform .6s var(--ease) .4s;
