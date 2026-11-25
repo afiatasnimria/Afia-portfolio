@@ -38,6 +38,10 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=86400"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'sha256-i3xI/A/WTquSlQaPUPKKX+yS3fB3tVynZxQRlJy+8fA='; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'; object-src 'self'; upgrade-insecure-requests"
         }
       ]
     }

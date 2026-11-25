@@ -247,27 +247,46 @@ if (projStageWrap) {
   setPaused(paused);
 }
 
-// Expertise — the ambient glow follows the hovered/focused category row.
-// All rows stay expanded, matching the reference's expanded practice list.
-const expertiseList = document.querySelector('.expertise-list');
-if (expertiseList) {
-  const rows = Array.from(expertiseList.querySelectorAll('.expertise-row'));
-  const glow = expertiseList.querySelector('.expertise-glow');
-  const firstRow = rows[0];
-  const placeGlow = (row) => {
-    glow.style.top = `${row.offsetTop + row.offsetHeight / 2}px`;
-    glow.style.backgroundColor = row.dataset.tone === 'violet'
-      ? 'rgba(109,92,231,.5)'
-      : 'rgba(31,107,67,.5)';
+const expertiseGrid = document.querySelector('.expertise-grid');
+if (expertiseGrid) {
+  const rows = Array.from(expertiseGrid.querySelectorAll('.expertise-row'));
+  const galaxy = expertiseGrid.querySelector('.expertise-galaxy');
+  const chips = galaxy ? Array.from(galaxy.querySelectorAll('.galaxy-chip')) : [];
+
+  const setSelection = (selectedRow) => {
+    if (!galaxy) return;
+    rows.forEach((row) => {
+      const active = row === selectedRow;
+      row.classList.toggle('is-active', active);
+      row.setAttribute('aria-pressed', String(active));
+    });
+    galaxy.classList.toggle('has-selection', Boolean(selectedRow));
+    const skills = selectedRow ? (selectedRow.dataset.skills || '').split('|') : [];
+    chips.forEach((chip) => {
+      chip.classList.toggle('is-linked', skills.includes(chip.textContent.trim()));
+    });
   };
 
   rows.forEach((row) => {
-    row.addEventListener('mouseenter', () => placeGlow(row));
-    row.addEventListener('focusin', () => placeGlow(row));
+    row.addEventListener('click', () => {
+      setSelection(row.classList.contains('is-active') ? null : row);
+    });
   });
-  expertiseList.addEventListener('mouseleave', () => placeGlow(firstRow));
-  window.addEventListener('resize', () => placeGlow(firstRow));
-  placeGlow(firstRow);
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') setSelection(null);
+  });
+
+  if (galaxy && 'IntersectionObserver' in window) {
+    let galaxyVisible = true;
+    const applyPlayState = () => galaxy.classList.toggle('is-paused', !galaxyVisible || document.hidden);
+    const observer = new IntersectionObserver(([entry]) => {
+      galaxyVisible = entry.isIntersecting;
+      applyPlayState();
+    }, { threshold: 0.05 });
+    observer.observe(galaxy);
+    document.addEventListener('visibilitychange', applyPlayState);
+    applyPlayState();
+  }
 }
 
 // Contact form — posts to the /api/contact serverless function, which
