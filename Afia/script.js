@@ -175,6 +175,8 @@ if (projStageWrap) {
       card.dataset.offset = String(offset);
       const link = card.querySelector('.proj-cta');
       if (link) link.tabIndex = offset === 0 ? 0 : -1;
+      const select = card.querySelector('.proj-select');
+      if (select) select.tabIndex = Math.abs(offset) <= 2 ? 0 : -1;
     });
     dots.forEach((dot, i) => {
       dot.classList.toggle('is-active', i === active);

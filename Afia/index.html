@@ -224,20 +224,26 @@
       </div>
     </section>
 
-    <section id="research" class="chapter">
+    <section id="research" class="chapter research-chapter">
       <div class="wrap">
-        <div class="chapter-head">
+        <div class="chapter-head research-head">
           <div class="heading-block">
-            <span class="eyebrow">Research</span>
+            <span class="eyebrow research-eyebrow"><span class="dot"></span>Research</span>
             <h2>Research<br><em>interests.</em></h2>
           </div>
-          <p class="section-lead">Deep learning work focused on medical image analysis and cancer outcome prediction.</p>
+          <div class="research-head-side">
+            <span class="research-count">05 selected works</span>
+            <p class="section-lead">Applied research spanning medical image analysis, cancer outcome prediction, carbon-efficient AI, digital forensics and health data mining.</p>
+          </div>
         </div>
 
         <div class="card-row research-row reveal">
           <article class="research-card bezel">
             <div class="bezel-core">
-              <div class="project-meta">Deep Learning / Medical Image Analysis</div>
+              <div class="research-card-top">
+                <span class="research-index">01</span>
+                <span class="project-meta">Deep Learning / Medical Image Analysis</span>
+              </div>
               <h3>Leukemia Cell Classification</h3>
               <p>Research on classifying leukemia cells using deep learning models to support automated hematology image analysis.</p>
               <div class="tags"><span>Classification</span><span>Computer Vision</span><span>Healthcare AI</span></div>
@@ -245,10 +251,46 @@
           </article>
           <article class="research-card bezel">
             <div class="bezel-core">
-              <div class="project-meta">Deep Learning / Multimodal Integration</div>
+              <div class="research-card-top">
+                <span class="research-index">02</span>
+                <span class="project-meta">Deep Learning / Multimodal Integration</span>
+              </div>
               <h3>Pan-Cancer Survival Rate Prediction</h3>
               <p>Research on predicting pan-cancer survival rates using deep learning with multimodal data integration.</p>
               <div class="tags"><span>Survival Prediction</span><span>Multimodal Learning</span><span>Oncology AI</span></div>
+            </div>
+          </article>
+          <article class="research-card bezel">
+            <div class="bezel-core">
+              <div class="research-card-top">
+                <span class="research-index">03</span>
+                <span class="project-meta">Research Paper / Green Computing</span>
+              </div>
+              <h3>Carbon-Aware Precision Scheduling for LLM Inference</h3>
+              <p>Studied real-time FP16, INT8 and INT4 precision switching based on grid carbon intensity across seven LLMs, backtested with real electricity data and reported honestly as a negative result on consumer GPUs.</p>
+              <div class="tags"><span>LLM Inference</span><span>Carbon Efficiency</span><span>PyTorch</span></div>
+            </div>
+          </article>
+          <article class="research-card bezel">
+            <div class="bezel-core">
+              <div class="research-card-top">
+                <span class="research-index">04</span>
+                <span class="project-meta">Research Paper / Computer Security</span>
+              </div>
+              <h3>Forensic Artifact Survival in Containerized Environments</h3>
+              <p>Examined which digital forensic artifacts survive teardown across Docker containers, Kubernetes pods and AWS Lambda, and proposed a minimal-overhead capture technique.</p>
+              <div class="tags"><span>Digital Forensics</span><span>Docker</span><span>Kubernetes</span><span>Serverless</span></div>
+            </div>
+          </article>
+          <article class="research-card bezel">
+            <div class="bezel-core">
+              <div class="research-card-top">
+                <span class="research-index">05</span>
+                <span class="project-meta">Research Paper / Data Mining</span>
+              </div>
+              <h3>GDM Biomarkers Study</h3>
+              <p>Tested whether composite biomarker ratios improve ML prediction of gestational diabetes history on NHANES 2007–2018 data; the ratios reduced performance across all models evaluated.</p>
+              <div class="tags"><span>Data Mining</span><span>NHANES</span><span>Biomarkers</span><span>LightGBM</span></div>
             </div>
           </article>
         </div>
@@ -274,7 +316,7 @@
                   <div>
                     <span class="proj-meta">01 // Java</span>
                     <h3 class="proj-title">Multilevel Puzzle Solving Game</h3>
-                    <p class="proj-desc">A team puzzle platform with five games, real-time chat and UIU Project Show recognition.</p>
+                    <p class="proj-desc">Manual puzzle nights lacked shared progress, so this JavaFX multiplayer game adds host/join rooms, riddles, hints, special powers and a live leaderboard.</p>
                   </div>
                   <div class="proj-bottom">
                     <div class="proj-tags"><span>Java</span><span>JavaFX</span><span>MySQL</span><span title="Sockets">+1</span></div>
@@ -305,7 +347,7 @@
                   <div>
                     <span class="proj-meta">02 // UI/UX</span>
                     <h3 class="proj-title">PatientCare System</h3>
-                    <p class="proj-desc">A healthcare platform covering doctor booking, SOS and ambulance tracking — designed with urgency UX as the first principle.</p>
+                    <p class="proj-desc">Scattered records slowed care. This Figma prototype maps appointments, records, prescriptions and dashboards.</p>
                   </div>
                   <div class="proj-bottom">
                     <div class="proj-tags"><span>Figma</span><span>UI/UX</span><span>Prototyping</span></div>
@@ -335,7 +377,7 @@
                   <div>
                     <span class="proj-meta">03 // PHP</span>
                     <h3 class="proj-title">TournyMate</h3>
-                    <p class="proj-desc">A multi-role tournament platform with real-time leaderboards, bracket generation and match scheduling.</p>
+                    <p class="proj-desc">Tracking tournaments in spreadsheets caused stale scores and messy player data. This DBMS app centralizes tournaments, matches, players, live scores, news and an admin dashboard.</p>
                   </div>
                   <div class="proj-bottom">
                     <div class="proj-tags"><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span title="JavaScript">+1</span></div>
@@ -367,7 +409,7 @@
                   <div>
                     <span class="proj-meta">04 // Python</span>
                     <h3 class="proj-title">Voice-Controlled Assistant</h3>
-                    <p class="proj-desc">A natural language voice assistant that runs system commands, searches the web and responds in speech — no cloud required.</p>
+                    <p class="proj-desc">Repeated desktop tasks broke focus, so this Python assistant turns speech into actions: app launching, web search, reminders, jokes and spoken replies.</p>
                   </div>
                   <div class="proj-bottom">
                     <div class="proj-tags"><span>Python</span><span>Google Speech API</span><span>pyttsx3</span></div>
@@ -400,7 +442,7 @@
                   <div>
                     <span class="proj-meta">05 // Arduino</span>
                     <h3 class="proj-title">Automated Fish Pond</h3>
-                    <p class="proj-desc">An IoT monitoring system that reads pH, temperature and oxygen levels and automates water pump and aeration responses.</p>
+                    <p class="proj-desc">Manual pond checks often miss unsafe water changes. This Arduino system monitors pH, temperature, turbidity and gas, then auto-controls the pump, aeration and feeding.</p>
                   </div>
                   <div class="proj-bottom">
                     <div class="proj-tags"><span>Arduino</span><span>C</span><span>IoT Sensors</span><span title="L298N">+1</span></div>
@@ -423,6 +465,98 @@
                 </div>
               </div>
             </article>
+
+            <article class="proj-card" data-index="5">
+              <button class="proj-select" type="button" aria-label="Show Yoga Center Management"></button>
+              <div class="proj-card-inner">
+                <span class="proj-card-bar" aria-hidden="true"></span>
+                <div class="proj-copy">
+                  <div>
+                    <span class="proj-meta">06 // Web Lab</span>
+                    <h3 class="proj-title">Yoga Center Management</h3>
+                    <p class="proj-desc">Yoga centers relied on manual registers for schedules, attendance and fees. This web app gives admins, members and trainers separate views with class assignment and payment tracking.</p>
+                  </div>
+                  <div class="proj-bottom">
+                    <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span title="Web Programming Lab">+1</span></div>
+                    <a class="proj-cta" href="https://github.com/afiatasnimria/Yoga-Management-System" target="_blank" rel="noopener noreferrer">Explore Case Study <span aria-hidden="true">→</span></a>
+                  </div>
+                </div>
+                <div class="proj-visual">
+                  <div class="proj-window">
+                    <div class="proj-window-bar"><span class="pwd"></span><span class="pwd"></span><span class="pwd"></span><span class="pwt">yoga-center.admin</span></div>
+                    <div class="proj-window-body">
+                      <div class="pw-schedule">
+                        <div class="pw-sch-head"><span>CLASS</span><span>TRAINER</span><span>SEATS</span></div>
+                        <div class="pw-sch-row"><span>Morning Flow</span><span>A. Rahman</span><span>12/20</span></div>
+                        <div class="pw-sch-row"><span>Evening Relax</span><span>S. Islam</span><span>08/16</span></div>
+                        <div class="pw-sch-row"><span>Beginner Yoga</span><span>M. Hossain</span><span>15/20</span></div>
+                        <div class="pw-meta">ATTENDANCE SYNCED · PAYMENTS CURRENT</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj-card" data-index="6">
+              <button class="proj-select" type="button" aria-label="Show ScholarshipHunt Study Abroad Platform"></button>
+              <div class="proj-card-inner">
+                <span class="proj-card-bar" aria-hidden="true"></span>
+                <div class="proj-copy">
+                  <div>
+                    <span class="proj-meta">07 // React</span>
+                    <h3 class="proj-title">ScholarshipHunt</h3>
+                    <p class="proj-desc">Scholarship research is fragmented across unreliable sources. This React platform brings searchable opportunities, agency verification, application tracking and login/register screens together.</p>
+                  </div>
+                  <div class="proj-bottom">
+                    <div class="proj-tags"><span>React</span><span>JavaScript</span><span>CSS</span><span title="Frontend">+1</span></div>
+                    <a class="proj-cta" href="https://github.com/afiatasnimria/Study_Abroad" target="_blank" rel="noopener noreferrer">Explore Case Study <span aria-hidden="true">→</span></a>
+                  </div>
+                </div>
+                <div class="proj-visual">
+                  <div class="proj-window">
+                    <div class="proj-window-bar"><span class="pwd"></span><span class="pwd"></span><span class="pwd"></span><span class="pwt">scholarshiphunt.app</span></div>
+                    <div class="proj-window-body">
+                      <div class="pw-search">
+                        <div class="pw-search-box">Search scholarships · country · field</div>
+                        <div class="pw-result"><strong>Erasmus Mundus</strong><span>EU · Fully funded</span></div>
+                        <div class="pw-result"><strong>DAAD Scholarship</strong><span>Germany · Open</span></div>
+                        <div class="pw-meta">AGENCY VERIFIED · TRACKER ACTIVE</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj-card" data-index="7">
+              <button class="proj-select" type="button" aria-label="Show Mini Games Collection"></button>
+              <div class="proj-card-inner">
+                <span class="proj-card-bar" aria-hidden="true"></span>
+                <div class="proj-copy">
+                  <div>
+                    <span class="proj-meta">08 // JavaScript</span>
+                    <h3 class="proj-title">Mini Games Collection</h3>
+                    <p class="proj-desc">Small logic games are usually scattered across sites. This collection packs eight browser games with shuffling, timers, lives, scoring and win detection into one lightweight set.</p>
+                  </div>
+                  <div class="proj-bottom">
+                    <div class="proj-tags"><span>HTML</span><span>CSS</span><span>Vanilla JS</span><span title="8 games">+1</span></div>
+                    <a class="proj-cta" href="https://github.com/afiatasnimria/Game" target="_blank" rel="noopener noreferrer">Explore Case Study <span aria-hidden="true">→</span></a>
+                  </div>
+                </div>
+                <div class="proj-visual">
+                  <div class="proj-window">
+                    <div class="proj-window-bar"><span class="pwd"></span><span class="pwd"></span><span class="pwd"></span><span class="pwt">mini-games.js</span></div>
+                    <div class="proj-window-body">
+                      <div class="pw-game-grid">
+                        <span>SUDOKU</span><span>WHACK-A-MOLE</span><span>SPACE SHOOTER</span><span>MEMORY MATCH</span><span>SLIDING PUZZLE</span><span>COLOR REACTION</span>
+                        <div class="pw-meta">8 GAMES · SCORE · TIMER · WIN STATES</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
 
           <div class="proj-dots" role="group" aria-label="Choose a project">
@@ -431,6 +565,9 @@
             <button class="proj-dot" type="button" aria-label="Go to TournyMate" aria-pressed="false"></button>
             <button class="proj-dot" type="button" aria-label="Go to Voice-Controlled Assistant" aria-pressed="false"></button>
             <button class="proj-dot" type="button" aria-label="Go to Automated Fish Pond" aria-pressed="false"></button>
+            <button class="proj-dot" type="button" aria-label="Go to Yoga Center Management" aria-pressed="false"></button>
+            <button class="proj-dot" type="button" aria-label="Go to ScholarshipHunt" aria-pressed="false"></button>
+            <button class="proj-dot" type="button" aria-label="Go to Mini Games Collection" aria-pressed="false"></button>
             <button class="proj-pause" type="button" aria-label="Pause carousel" aria-pressed="false">Pause</button>
           </div>
           <p class="sr-only" id="projStatus" aria-live="polite"></p>
